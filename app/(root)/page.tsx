@@ -1,5 +1,11 @@
-import React from 'react';
+import { UserButton } from '@clerk/nextjs';
 
-export default function page() {
-  return <p>Hello admin dasboard</p>;
-}
+const SetupPage = () => {
+  return (
+    <div className="p-4">
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
+};
+
+export default SetupPage;
